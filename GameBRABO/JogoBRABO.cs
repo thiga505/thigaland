@@ -6,7 +6,7 @@ namespace GameBRABO{
         private readonly iJogador _jogadorB;
         private readonly iJogador _jogadorC;
         private readonly iJogador _jogadorD;
-
+        
         public JogoBRABO(iJogador jogadorA, iJogador jogadorB, iJogador jogadorC, iJogador jogadorD){
             _jogadorA = jogadorA;
             _jogadorB = jogadorB;
@@ -20,6 +20,8 @@ namespace GameBRABO{
             System.Console.Write(_jogadorA.Chutar());
             System.Console.Write(_jogadorA.Passar());
             System.Console.Write(_jogadorA.Marcar());
+            System.Console.Write(_jogadorA.Driblar());
+            System.Console.Write(_jogadorA.Um_dois());
             // 
             System.Console.Write("\tEdmundo\n");
             // 
@@ -28,6 +30,8 @@ namespace GameBRABO{
             System.Console.Write(_jogadorB.Passar());
             System.Console.Write(_jogadorB.Dancar());
             System.Console.Write(_jogadorB.Marcar());
+            System.Console.Write(_jogadorB.Driblar());
+            System.Console.Write(_jogadorB.Um_dois());
             //
             System.Console.Write("\tMbappé\n");
             //
@@ -35,6 +39,8 @@ namespace GameBRABO{
             System.Console.Write(_jogadorC.Chutar());
             System.Console.Write(_jogadorC.Passar());
             System.Console.Write(_jogadorC.Marcar());
+            System.Console.Write(_jogadorC.Driblar());
+            System.Console.Write(_jogadorC.Um_dois());
             //
             System.Console.Write("\tZidane\n");
             //
@@ -45,8 +51,10 @@ namespace GameBRABO{
             bool cabecada = true;
             if(cabecada){
                 System.Console.Write(_jogadorD.Cabecada());
-                System.Console.Write("E foi expulso do jogo.");
+                System.Console.Write("e foi expulso do jogo.\n");
             }
+            System.Console.Write(_jogadorD.Um_dois());           
+            System.Console.Write(_jogadorD.Driblar());
         }
     }
 }

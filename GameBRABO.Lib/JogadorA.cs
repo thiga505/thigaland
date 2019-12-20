@@ -23,10 +23,19 @@ namespace GameBRABO.Lib{
             return $"{_Nome} marcou o passe.\n";
         }
         public string Dancar(){
-            throw new System.NotImplementedException();
+            return "";
         }
         public string Cabecada(){
-            throw new System.NotImplementedException();
+            return "";
+        }
+        public string Um_dois(){
+            return $"{_Nome} fez um dois com outro jogador.\n";
+        }
+        public string Driblar(){
+            return $"{_Nome} driblou um jogador.\n";
+        }
+        public string Carrinho(){
+            return $"{_Nome} deu um carrinho em um jogador.\n";
         }
     }
 }

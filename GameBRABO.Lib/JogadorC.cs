@@ -20,5 +20,14 @@ namespace GameBRABO.Lib{
         public string Cabecada(){
             return "";
         }
+        public string Um_dois(){
+            return "Mbappé fez um dois com outro jogador.\n";
+        }
+        public string Driblar(){
+            return "Mbappé driblou o jogador.\n";
+        }
+        public string Carrinho(){
+            return "Mbappé deu um carrinho em um jogador.\n";
+        }
     }
 }
